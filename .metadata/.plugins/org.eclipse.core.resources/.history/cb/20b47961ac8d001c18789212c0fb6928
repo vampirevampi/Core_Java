@@ -1,0 +1,19 @@
+package jobaik.session2;
+
+import java.time.LocalDateTime;
+
+public class CreateEmployee
+{
+	public static void main(String[] args)
+ {
+	 Address res1=new Address("156","Jublihills","Hyderabad");
+	 Address off1=new Address("157","Gachibowli","Hyderabad");
+	 Address com1=new Address("158","Gajuwaka","Visakhapatnam");
+	 
+	 Address res2=new Address("159","Jublihills","Hyderabad");
+	 Address off2=new Address("160","Kurmanpalem","Visakhapatnam");
+	 Address com2=new Address("161","NAD","Visakhapatnam");
+	
+			
+ }
+}

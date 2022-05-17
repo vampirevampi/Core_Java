@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>ServletPractice2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Servlet1</display-name>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>ai.jobiak.context.Servlet1</servlet-class>
+  </servlet>
+  <context-parameter>
+  <param-name>brand1</param-name>
+  <param-value>Apple</param-value>
+  </context-parameter>
+  
+  <context-parameter>
+   <param-name>brand2</param-name>
+  <param-value>Vivo_y17</param-value>
+  </context-parameter>
+  
+  <context-parameter>
+  <parameter-name>brand3</parameter-name>
+  <parameter-value>Samsung_note</parameter-value>
+  </context-parameter>
+  
+   <context-parameter>
+  <parameter-name>brand4</parameter-name>
+  <parameter-value>Redme_note</parameter-value>
+  </context-parameter>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+</web-app>
+</element>

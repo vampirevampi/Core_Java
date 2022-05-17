@@ -1,0 +1,21 @@
+package ai.jobiak.com;
+
+import java.util.Optional;
+
+public class TestOptional {
+
+	public static void main(String[] args) {
+		String str=null;
+		String str2="hema";
+		Optional op=Optional.of(str);
+		Optional op2=Optional.of(str2);
+		System.out.println(op2.get());
+		Optional op=Optional.ofNullable(str);
+		//if(op.isPresent()) 
+		System.out.println(op.orElse("string is empty"));
+		//System.out.println(op.get());
+		
+
+	}
+
+}

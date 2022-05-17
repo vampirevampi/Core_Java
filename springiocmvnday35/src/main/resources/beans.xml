@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd"> -->
+			
+		<!--  	<beans>
+			
+			<bean name="aObj" class="ai.jobiak.source.A"> </bean>
+			<bean name="b" class="ai.jobiak.source.B">
+			<property name="a" ref="aobj" >  </property>
+			 </bean>
+			 
+			 -->
+			 
+			 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+			
+		<!-- <bean name="pointA" class="com.jobiak.auto.Point"> -->
+<bean name="a" class="com.jobiak.auto.Point">
+<property name="x" value="25.5"></property>
+<property name="y" value="35.5"></property>
+</bean>
+
+<!-- <bean name="pointB" class="com.jobiak.auto.Point"> below is the autowire by type -->
+<bean name="b" class="com.jobiak.auto.Point"> 
+<property name="x" value="75.5"></property>
+<property name="y" value="95.5"></property>
+
+</bean>
+
+<!-- <bean name="line" class="com.jobiak.auto.Line" autowire="byName"> -->
+<!-- <bean name="line" class="com.jobiak.auto.Line" autowire="byType">-->
+<bean name="line" class="com.jobiak.auto.Line" autowire="constructor">
+
+ </bean>
+
+
+
+<!-- <bean name="line" class="com.jobiak.auto.Line">
+<property name="a" ref="pointA"></property>
+
+<property name="b" ref="pointB"></property>
+
+
+</bean>
+ -->
+			
+			
+			 
+			<bean name="garden" class="com.jobiak.ioc.Garden">
+			<property name="fruits">
+			<list> 
+			<value>Mango</value>
+			<value>Kiwi</value>
+			<value>Apple</value>
+			<value>Banana</value>
+			<value>Orange</value>
+			</list>
+			</property>
+			
+			<property name="trees">
+			<set> 
+			
+			<value>Banyian</value>
+			<value>Oak</value>
+			<value>Neem Tree</value>
+			<value>Tamarid Tree</value>
+		    <value>Labanon Tree</value>
+			
+			</set>
+			</property>
+			
+			
+			<property name="cityFruit">
+			
+			<map>
+			
+			  <entry key="hydrabad" value="custardapple"></entry>
+			  <entry key="banginapally" value="mangoes"></entry>
+			  <entry key="narayanapur" value="grapes"></entry>
+			  <entry key="ananthapur" value="muskmelone"></entry>
+			  <entry key="hydrabad" value="custardapple"></entry>
+			  <entry key="rajamundry" value="banana"></entry>
+			  
+			  
+			</map>
+			
+			
+			</property>
+			
+			
+			
+			
+			
+			<constructor-arg name="flowers">
+			<list>
+			<value>Rose</value>
+			<value>Lilly</value>
+			<value>Sun Flower</value>
+			<value>Jasmin</value>
+			<value>Cosmos</value>
+			
+			</list>
+			 </constructor-arg>
+			 
+			</bean>
+			</beans>

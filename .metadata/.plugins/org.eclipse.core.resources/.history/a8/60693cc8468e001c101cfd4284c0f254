@@ -1,0 +1,11 @@
+package inheritance.session4;
+
+public class TestInheritance {
+
+	public static void main(String[] args) {
+		Residence_Address res=new Residence_Address("Sri Kodanda Rama","powercity","10-5-2022","123","lakshmi","Visakhapatnam");
+        Office_Address off= new Office_Address("#12435","Hema","Vizag","8807896540l","bluesky","Banglore");
+	}
+
+}
+  

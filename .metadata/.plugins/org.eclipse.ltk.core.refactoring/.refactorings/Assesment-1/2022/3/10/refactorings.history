@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Account&apos; to &apos;Acc_Services&apos;&#x0D;&#x0A;- Original project: &apos;Assesment-1&apos;&#x0D;&#x0A;- Original element: &apos;Account&apos;&#x0D;&#x0A;- Renamed element: &apos;Acc_Services&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Account&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Account.java[Account" matchStrategy="1" name="Acc_Services" qualified="false" references="true" similarDeclarations="false" stamp="1646371012065" textual="false" version="1.0"/>
+</session>

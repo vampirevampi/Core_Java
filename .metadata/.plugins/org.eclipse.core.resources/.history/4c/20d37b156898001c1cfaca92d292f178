@@ -1,0 +1,13 @@
+
+public class PracticesTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Inhi obj=new Inhi("hema","123",21,"7702509457",1,2,3);
+		obj.push();
+		int arr[]=new int[4];
+		arr[5]= {1,2,3,4,5};
+
+	}
+
+}

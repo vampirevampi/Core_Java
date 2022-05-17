@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>servletpractice</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+     <welcome-file>index2.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>FirstGenericServlet</display-name>
+    <servlet-name>FirstGenericServlet</servlet-name>
+    <servlet-class>ai.jobiak.pacticeservlet.FirstGenericServlet</servlet-class>
+  </servlet>
+  
+  
+  
+   <init-param>
+   <parameter-name>val2</parameter-name>
+  <param-value>Vivo_y17</param-value>
+  </init-param>
+  
+  <init-param>
+  <parameter-name>val1</parameter-name>
+  <parameter-value>Samsung_note</parameter-value>
+</init-param>
+  
+  <servlet-mapping>
+    <servlet-name>FirstGenericServlet</servlet-name>
+    <url-pattern>/generic</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ConfigServlet</servlet-name>
+  <servlet-class>ai.jobiak.pacticeservlet.ConfigServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>FirstGenericServlet</servlet-name>
+  <url-pattern>/config1</url-pattern>
+   </servlet-mapping>
+  
+  
+   
+ 
+  
+  
+</web-app>
+</element>                                                                           

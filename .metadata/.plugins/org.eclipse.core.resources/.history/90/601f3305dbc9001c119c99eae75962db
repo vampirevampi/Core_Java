@@ -1,0 +1,10 @@
+package ai.jobiak.task;
+
+public class BallsSegregation {
+	public static void main(String args[]) {
+		int n=10;
+	ArrayList<Integer> list=new ArrayList<Integer>
+		
+	}
+
+}

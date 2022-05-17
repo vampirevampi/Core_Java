@@ -1,0 +1,11 @@
+
+public class PracticesTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Inhi obj=new Inhi("hema","123",21,"7702509457",1,2,3);
+		obj.push();
+
+	}
+
+}

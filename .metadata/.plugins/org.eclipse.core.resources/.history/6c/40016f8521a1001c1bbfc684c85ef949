@@ -1,0 +1,6 @@
+package ai.jobiak.com;
+
+public class Student implements Comparable<Student>{
+String name;
+int age;
+}
